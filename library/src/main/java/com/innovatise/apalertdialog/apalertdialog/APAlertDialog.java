@@ -92,8 +92,8 @@ public class APAlertDialog extends AlertDialog implements View.OnClickListener {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         ViewGroup promptView = (ViewGroup) layoutInflater.inflate(R.layout.ap_alert_dialog, null);
 
-        ImageView headerIcon = promptView.findViewById(R.id.header_icon);
-        ViewGroup headerBg = promptView.findViewById(R.id.header_bg);
+        ImageView headerIcon = (ImageView)promptView.findViewById(R.id.header_icon);
+        ViewGroup headerBg = (ViewGroup)promptView.findViewById(R.id.header_bg);
 
         GradientDrawable bgShape = (GradientDrawable)headerBg.getBackground();
 
