@@ -4,9 +4,10 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="green">#62AC36</color>
-    <color name="gray">#757575</color>
+    <color name="gray">#E0E0E0</color>
     <color name="red">#F44336</color>
     <color name="info_color">#757575</color>
     <color name="question_color">#795548</color>
     <color name="warning_color">#FF9800</color>
+    <color name="gray_contrast">#616161</color>
 </resources>

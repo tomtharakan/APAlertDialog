@@ -50,6 +50,20 @@ public class APAlertDialog extends AlertDialog implements View.OnClickListener {
             }
 
         }
+
+        public int getContrastColor() {
+            switch (this) {
+                case BUTTON_STYLE_GREEN:
+                    return R.color.white;
+                case BUTTON_STYLE_GREY:
+                    return R.color.gray_contrast;
+                case BUTTON_STYLE_RED:
+                    return R.color.white;
+                default:
+                    return R.color.white;
+            }
+
+        }
     }
 
     int buttonIndex = 0;
@@ -139,6 +153,7 @@ public class APAlertDialog extends AlertDialog implements View.OnClickListener {
             button.setVisibility(View.VISIBLE);
             button.setBackgroundColor(ContextCompat.getColor(getContext(), buttonOb.style.getColor()));
             button.setText(buttonOb.title);
+            button.setTextColor(ContextCompat.getColor(getContext(), buttonOb.style.getContrastColor()));
             button.setOnClickListener(this);
             button.setTag(buttonOb);
         }

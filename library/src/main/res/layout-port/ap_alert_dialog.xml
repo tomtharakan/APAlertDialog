@@ -34,20 +34,20 @@
                 android:textColor="#000"
                 android:layout_gravity="center_horizontal"
                 android:textAlignment="center"
-                android:textSize="16dp"
+                android:textSize="18sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:visibility="gone"
-                android:layout_weight="0.01" />
+                android:textStyle="normal|bold"/>
 
             <TextView
                 android:id="@+id/desc_popup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:visibility="gone"
-                android:textSize="14dp"
+                android:textSize="16sp"
                 android:gravity="center"/>
 
 
