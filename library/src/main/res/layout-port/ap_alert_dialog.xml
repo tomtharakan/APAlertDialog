@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lltopup1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/popup_layout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="30dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_weight="0.01" />
+
+            <TextView
+                android:id="@+id/desc_popup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:textSize="14dp"
+                android:gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/alert_dialog_button_1"
+                        style="@style/ap_alert_dialog_button"/>
+                    <Button
+                        android:id="@+id/alert_dialog_button_2"
+                        style="@style/ap_alert_dialog_button"/>
+                    <Button
+                        android:id="@+id/alert_dialog_button_3"
+                        style="@style/ap_alert_dialog_button"/>
+                    <Button
+                        android:id="@+id/alert_dialog_button_4"
+                        style="@style/ap_alert_dialog_button"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/header_bg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/circular_layout_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/header_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:tint="@color/white"/>
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

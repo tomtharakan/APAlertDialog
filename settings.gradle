@@ -1,1 +1,1 @@
-include ':app', ':apalertdialog'
+include ':demo', ':library'
