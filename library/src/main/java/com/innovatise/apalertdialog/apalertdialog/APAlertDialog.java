@@ -114,11 +114,11 @@ public class APAlertDialog extends AlertDialog implements View.OnClickListener {
         switch (this.style) {
             case SUCCESS:
                 headerIcon.setImageResource(R.drawable.ic_done_white_36dp);
-                bgShape.setColor(ContextCompat.getColor(getContext(), R.color.red));
+                bgShape.setColor(ContextCompat.getColor(getContext(), R.color.green));
                 break;
             case ERROR:
                 headerIcon.setImageResource(R.drawable.ic_error_outline_white_36dp);
-                bgShape.setColor(ContextCompat.getColor(getContext(), R.color.green));
+                bgShape.setColor(ContextCompat.getColor(getContext(), R.color.red));
                 break;
             case WARNING:
                 headerIcon.setImageResource(R.drawable.ic_warning_white_36dp);
